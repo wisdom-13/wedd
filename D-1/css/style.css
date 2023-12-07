@@ -241,15 +241,15 @@ li {
   text-align: right;
 }
 
-#content .board .galley {
+#content .board .gallery {
   display: none;
 }
 
-#content .board .galley ul {
+#content .board .gallery ul {
   display: flex;
 }
 
-#content .board .galley ul li {
+#content .board .gallery ul li {
   padding: 10px;
 }
 
