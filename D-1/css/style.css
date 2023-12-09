@@ -16,11 +16,6 @@ li {
   list-style: none;
 }
 
-/* img {
-  width: 100%;
-  vertical-align: top;
-} */
-
 #wrap {
   width: 100%;
   display: flex;
