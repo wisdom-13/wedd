@@ -16,11 +16,6 @@ li {
   list-style: none;
 }
 
-/* img {
-  width: 100%;
-  vertical-align: top;
-} */
-
 #wrap {
   width: 100%;
   display: flex;
@@ -65,7 +60,7 @@ li {
   border-bottom: 1px solid rgba(255, 255, 255, 0.8);
 }
 
-#header .menu>ul>li>a:hover {
+#header .menu>ul>li:hover>a {
   font-weight: bold;
 }
 
