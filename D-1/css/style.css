@@ -107,14 +107,14 @@ li {
   overflow: hidden;
 }
 
-#content .slide .image-wrap {
+#content .slide .slide-wrap {
   width: 400%;
   height: 100%;
   display: flex;
   background-color: red;
 }
 
-#content .slide .image-wrap .slider {
+#content .slide .slide-wrap .slider {
   position: relative;
   width: 100%;
   height: 100%;
@@ -126,20 +126,20 @@ li {
   align-items: end;
 }
 
-#content .slide .image-wrap .slider .text h1,
-#content .slide .image-wrap .slider .text p {
+#content .slide .slide-wrap .slider .text h1,
+#content .slide .slide-wrap .slider .text p {
   color: #fff;
 }
 
-#content .slide .image-wrap .slider.s1 {
+#content .slide .slide-wrap .slider.s1 {
   background-image: url(../images/slider01.jpg);
 }
 
-#content .slide .image-wrap .slider.s2 {
+#content .slide .slide-wrap .slider.s2 {
   background-image: url(../images/slider02.jpg);
 }
 
-#content .slide .image-wrap .slider.s3 {
+#content .slide .slide-wrap .slider.s3 {
   background-image: url(../images/slider03.jpg);
 }
 

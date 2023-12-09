@@ -1,15 +1,15 @@
 
 $(function () {
   let currentIndex = 0;
-  $(".image-wrap").append($(".slider").first().clone(true));
+  $(".slide-wrap").append($(".slider").first().clone(true));
 
   setInterval(() => {
     currentIndex++;
-    $(".image-wrap").animate({ marginLeft: -100 * currentIndex + "%" }, 600);
+    $(".slide-wrap").animate({ marginLeft: -100 * currentIndex + "%" }, 600);
 
     if (currentIndex == 3) {
       setTimeout(() => {
-        $(".image-wrap").animate({ marginLeft: 0 }, 0);
+        $(".slide-wrap").animate({ marginLeft: 0 }, 0);
         currentIndex = 0;
       }, 700);
     }
