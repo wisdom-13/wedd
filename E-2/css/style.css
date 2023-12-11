@@ -1,0 +1,278 @@
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  color: #333;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+li {
+  list-style: none;
+}
+
+#wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+#header {
+  width: 200px;
+  background-color: #91020d;
+}
+
+#header .logo {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header .logo a {
+  display: block;
+  font-size: 26px;
+  margin-top: 5px;
+  color: #fff;
+}
+
+#header .menu {
+  margin-bottom: 30px;
+}
+
+#header .menu>ul>li>a {
+  padding: 10px;
+  display: inline-block;
+  background-color: #fff;
+  color: #91020d;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #91020d;
+}
+
+#header .menu>ul>li:hover>a {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+#header .menu>ul>li:last-child a {
+  border-bottom: none;
+}
+
+#header .menu>ul>li>ul {
+  display: none;
+}
+
+#header .menu>ul>li>ul>li>a {
+  padding: 10px;
+  display: inline-block;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+#header .menu>ul>li>ul>li>a:hover {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+#board {
+  width: 400px;
+  padding: 20px 0;
+}
+
+#board .notice,
+#board .gallery,
+#board .link {
+  padding: 20px;
+}
+
+#board .notice .title,
+#board .gallery .title {
+  padding: 5px 8px;
+  margin-bottom: 5px;
+  background-color: #91020d;
+  color: #fff;
+}
+
+#board .notice ul li {
+  width: 100%;
+  padding: 5px;
+}
+
+#board .notice ul li a {
+  width: 70%;
+  display: inline-block;
+}
+
+#board .notice ul li a:hover {
+  text-decoration: underline;
+}
+
+#board .notice ul li span {
+  width: 25%;
+  display: inline-block;
+  text-align: right;
+}
+
+#board .gallery ul {
+  display: flex;
+}
+
+#board .gallery ul li {
+  padding: 10px 20px;
+  padding-left: 0;
+  font-weight: bold;
+}
+
+#board .gallery ul li:hover {
+  text-decoration: underline;
+}
+
+#board .gallery ul li .image-wrap {
+  width: 160px;
+  height: 260px;
+  margin-bottom: 10px;
+}
+
+#board .gallery ul li .image-wrap img {
+  width: 160px;
+  height: 260px;
+  object-fit: cover;
+}
+
+#board .link ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+#board .link ul li {
+  text-align: center;
+  font-size: 14px;
+}
+
+#board .link ul li img {
+  width: 50px;
+  opacity: .8;
+}
+
+#content {
+  width: calc(100% - 200px - 400px);
+  height: calc(100vh - 100px);
+}
+
+#content .slide {
+  width: 100%;
+  height: calc(100vh - 100px);
+  overflow: hidden;
+}
+
+#content .slide .slide-wrap {
+  width: 400%;
+  height: 100%;
+  display: flex;
+  background-color: red;
+}
+
+#content .slide .slide-wrap .slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding: 30px;
+}
+
+#content .slide .slide-wrap .slider .text {
+  padding: 30px;
+  background: #91020d;
+}
+
+#content .slide .slide-wrap .slider .text h1,
+#content .slide .slide-wrap .slider .text p {
+  color: #fff;
+}
+
+#content .slide .slide-wrap .slider.s1 {
+  background-image: url(../images/slider01.jpg);
+}
+
+#content .slide .slide-wrap .slider.s2 {
+  background-image: url(../images/slider02.jpg);
+}
+
+#content .slide .slide-wrap .slider.s3 {
+  background-image: url(../images/slider03.jpg);
+}
+
+#footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f2f2f2;
+}
+
+#footer .footer-logo {
+  width: 200px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#footer .site {
+  margin: 10px;
+  margin-right: 30px;
+  margin-left: auto;
+}
+
+#footer .site select {
+  padding: 10px;
+  width: 150px;
+}
+
+#popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+#popup .box {
+  width: 400px;
+  height: 500px;
+  background: #fff;
+  padding: 30px;
+  position: relative;
+}
+
+#popup .box .title {
+  margin-bottom: 20px;
+}
+
+#popup .box .popup-close {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: #91020d;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+}
